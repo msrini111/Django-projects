@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # added
-
+    'crispy_forms',
+    'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     # default
     'django.contrib.admin',
@@ -125,3 +126,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL= 'Blog-Home'
+LOGIN_URL = 'login'
+
